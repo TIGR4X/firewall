@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso Restringido</title>
+    <script>
+        function verificarContrasena() {
+            const contrasena = document.getElementById("contrasena").value;
+            const contrasenaCorrecta = "tu_contrasena"; // Cambia esto por la contraseña que desees
+
+            if (contrasena === contrasenaCorrecta) {
+                window.location.href = "pagina_protegida.html"; // Cambia esto por la URL de la página a la que deseas redirigir
+            } else {
+                alert("Contraseña incorrecta. Inténtalo de nuevo.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Ingrese la Contraseña</h1>
+    <input type="password" id="contrasena" placeholder="Contraseña">
+    <button onclick="verificarContrasena()">Entrar</button>
+</body>
+</html>
