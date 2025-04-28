@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Protegida</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff0000, #800080); /* Degradado de rojo a púrpura */
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .content {
+            background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el contenido */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            max-width: 800px; /* Ancho máximo del contenedor */
+            width: 90%; /* Ancho del contenedor */
+        }
+
+        video {
+            width: 100%; /* Hacer que el video sea responsivo */
+            border-radius: 10px; /* Bordes redondeados para el video */
+            margin-bottom: 20px; /* Espacio debajo del video */
+        }
+
+        img {
+            width: 100%; /* Hacer que la imagen sea responsiva */
+            border-radius: 10px; /* Bordes redondeados para la imagen */
+        }
+    </style>
 </head>
 <body>
-    <h1>Bienvenido a la Página Protegida</h1>
-    <p>Este es el contenido que estaba protegido.</p>
+    <div class="content">
+        <h1>Bienvenido a la Página Protegida</h1>
+        <video controls>
+            <!--<source src="tu_video.mp4" type="video/mp4">--> <!-- Cambia esto por la URL de tu video -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tnfqIQ11Qek?si=4f1EKXpHr4v7a6WI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <img src="tu_imagen.jpg" alt="Descripción de la imagen"> <!-- Cambia esto por la URL de tu imagen -->
+    </div>
 </body>
 </html>
